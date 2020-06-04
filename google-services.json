@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "660168046999",
+    "firebase_url": "https://curbq-67839.firebaseio.com",
+    "project_id": "curbq-67839",
+    "storage_bucket": "curbq-67839.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660168046999:android:f4fc042a1b8e0781ef2cd2",
+        "android_client_info": {
+          "package_name": "com.christiannavarro707.CurbQ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660168046999-keoqm9f1akb4pq9kacogpgg8ujvj38in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbx3m8hkoIfDWFyoubv_uxy822vo2XMWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660168046999-keoqm9f1akb4pq9kacogpgg8ujvj38in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

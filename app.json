@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "CurbQ",
+    "slug": "curbq",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "android": {
+      "package": "com.christiannavarro707.CurbQ",
+      "googleServicesFile" : "./google-services.json",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleSignIn": {
+          "apiKey" : "AIzaSyBbx3m8hkoIfDWFyoubv_uxy822vo2XMWQ"
+        },
+        "googleMaps": {
+          "apiKey" : "AIzaSyBbx3m8hkoIfDWFyoubv_uxy822vo2XMWQ"
+        }
+      },
+      "versionCode": 1
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier" : "com.christiannavarro707.CurbQ",
+      "config": {
+        "googleSignIn" : {
+          "reservedClientId" : "660168046999-fbiljqudq1f1h32ctr9d5a1vqko3riti.apps.googleusercontent.com"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}
