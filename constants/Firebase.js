@@ -1,9 +1,15 @@
 import * as firebase from 'firebase'
+import * as React from 'react'
+import VendorTile from '../components/Vendor/VendorTile'
+
 import 'firebase/firestore'
 
   export default async function getVendors(){
-    let vendors = []
-    const firebaseConfig = {
+    return (
+      <VendorTile />
+    )
+    // let vendors = []
+    // const firebaseConfig = {
       // apiKey: "AIzaSyBg0zy3uO6zJQklKZuNZUI-s9Xw--frrcE",
       // authDomain: "curbq-67839.firebaseapp.com",
       // databaseURL: "https://curbq-67839.firebaseio.com",
@@ -12,22 +18,16 @@ import 'firebase/firestore'
       // messagingSenderId: "660168046999",
       // appId: "1:660168046999:web:fbb7b095353152f1ef2cd2",
       // measurementId: "G-RBP0C6G88G"
-    };
+    // };
     // Initialize Firebase
-    if(!firebase.apps.length){
-        firebase.initializeApp(firebaseConfig)
-    }
+    // if(!firebase.apps.length){
+    //     firebase.initializeApp(firebaseConfig)
+    // }
 
-    const dbh = firebase.firestore()
-    dbh.collection('Vendors').get().then(query => {
-      query.forEach(doc => {
-        console.log(doc.data())
-      })
-    })
-  }
-
-  class Vendor {
-    location
-    name
-    queue
+    // const dbh = firebase.firestore()
+    // dbh.collection('Vendors').get().then(query => {
+    //   query.forEach(doc => {
+    //     console.log(doc.data())
+    //   })
+    // })
   }

@@ -5,6 +5,8 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SearchScreen from '../screens/SearchScreen';
+import { Button, Appbar } from 'react-native-paper'
+import StoreFrontScreen from '../screens/StorefrontScreen';
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
@@ -20,6 +22,7 @@ export default function BottomTabNavigator({ navigation, route }) {
       <BottomTab.Screen
         name="Home"
         component={HomeScreen}
+        initialParams={navigation}
         options={{
           title: 'Shop',
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-cart" />,
@@ -41,6 +44,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-contact" />,
         }}
       />
+      <BottomTab.Screen name="Store" component={StoreFrontScreen} />
     </BottomTab.Navigator>
   );
 }
@@ -51,6 +55,8 @@ function getHeaderTitle(route) {
   switch (routeName) {
     case 'Home':
       return 'Shop Local';
+    case 'Search':
+      return 'Search Local'
     case 'Links':
       return 'Login';
   }
